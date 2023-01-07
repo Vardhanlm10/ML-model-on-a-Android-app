@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Clump_Thickness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Clump Thickness"
+            android:layout_margin="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Clump_Thickness_t"
+                />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Uniformity_Size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Uniformity Size"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_below="@+id/Clump_Thickness"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Uniformity_Size_t"
+                />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Uniformity_Shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Uniformity Shape"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_below="@+id/Uniformity_Size"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Uniformity_Shape_t"
+                />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Marginal_Adhesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Marginal Adhesion"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_below="@+id/Uniformity_Shape"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Marginal_Adhesion_t"
+                />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Epithelial_Cell_Size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Epithelial Cell Size"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_below="@+id/Marginal_Adhesion"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Epithelial_Cell_Size_t"
+                />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Bare_Nuclei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bare Nuclei"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_below="@+id/Epithelial_Cell_Size"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Bare_Nuclei_t"
+                />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Bland_Chromatin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bland Chromatin"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_below="@+id/Bare_Nuclei"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Bland_Chromatin_t"
+                />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Normal_Nucleoli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Normal Nucleoli"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_below="@+id/Bland_Chromatin"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Normal_Nucleoli_t"
+                />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Mitoses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mitoses"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_below="@+id/Normal_Nucleoli"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Mitoses_t"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Mitoses"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:text="Submit"
+            android:id="@+id/Submit"
+            android:backgroundTint="@color/cardview_dark_background"/>
+            <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Health Status"
+            android:layout_margin="15dp"
+            android:layout_below="@+id/Submit"
+            >
+
+                <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Result_t"
+                />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
